@@ -4,35 +4,24 @@
 #include<fstream>
 #include<sstream>
 #include<cstdlib>
-#include<vector>
-#include<string>
-#include<cstdio>
-#include<bitset>
-#include<queue>
-#include<stack>
-#include<cmath>
-#include<map>
-#include<set>
-#define FF(i, a, b) for(int i=a; i<b; i++)
-#define FD(i, a, b) for(int i=a; i>=b; i--)
-#define REP(i, n) for(int i=0; i<n; i++)
-#define CLR(a, b) memset(a, b, sizeof(a))
-#define debug puts("**debug**")
+
+#include <bits/stdc++.h>
 using namespace std;
  
 const int maxn = 20010;
 int n, m, fa[2][maxn][20], dist[maxn], val[maxn];
 vector<int> G[maxn];
+ 
 int bfs(int x, int k)
 {
-    CLR(dist, -1);
+    memset(dist, -1, sizeof(dist));
     queue<int> q;
     q.push(x); dist[x] = 0;
     int ret = x, len = 0;
-    while(!q.emake_pairty())
+    while(!q.empty())
     {
         int u = q.front(); q.pop();
-        REP(i, G[u].size())
+        for(int i=0; i<G[u].size(); i++)
         {
             int v = G[u][i];
             if(dist[v] != -1) continue;
@@ -42,18 +31,24 @@ int bfs(int x, int k)
             if(dist[v] > len) len = dist[v], ret = v;
         }
     }
-    FF(i, 1, n+1) val[i] = max(val[i], dist[i]);
+    for(int i=1; i<n+1; i++)val[i] = max(val[i], dist[i]);
     return ret;
 }
-void rqm()
+ 
+void gao()
 {
-    CLR(val, 0); CLR(fa, -1);
+    memset(val, 0, sizeof(val));
+    memset(fa, -1, sizeof(fa));
     int st, ed;
     st = bfs(1, 0); ed = bfs(st, 0); bfs(ed, 1);
     fa[0][st][0] = st;
     fa[1][ed][0] = ed;
-    REP(k, 2) FF(j, 1, 20) FF(i, 1, n+1) if(fa[k][i][j-1] != -1) fa[k][i][j] = fa[k][fa[k][i][j-1]][j-1];
+    for(int k=0; k<2; k++)
+    for(int j=1; j<20; j++)
+    for(int i=1; i<n+1; i++)
+    if(fa[k][i][j-1] != -1) fa[k][i][j] = fa[k][fa[k][i][j-1]][j-1];
 }
+ 
 int query(int vi, int di, int k)
 {
     int r = 19;
@@ -68,17 +63,20 @@ int query(int vi, int di, int k)
  
 int main()
 {
+
     while(~scanf("%d%d", &n, &m))
     {
-        FF(i, 1, n+1) G[i].clear();
+        for(int i=1; i<n+1; i++) G[i].clear();
         int u, v, vi, di;
-        REP(i, n-1)
+        for(int i=0; i<n-1; i++)
         {
             scanf("%d%d", &u, &v);
             G[u].push_back(v);
             G[v].push_back(u);
         }
-        rqm();
+ 
+        gao();
+ 
         while(m--)
         {
             scanf("%d%d", &vi, &di);
