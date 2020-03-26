@@ -1,0 +1,8 @@
+Input data get to the string
+Create new string N
+string.back() get the last character of string
+Push the string to N
+if last element of N == character push:
+  N.pop delete last string because is is duplice
+  get new cycle 
+We will get cypher string with not duplice 2 charecter from source string
