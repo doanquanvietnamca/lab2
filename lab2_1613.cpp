@@ -1,13 +1,5 @@
 
-#include <cstdio>
-#include <cmath>
-#include <cstring>
-#include <string>
-#include <vector>
-#include <set>
-#include <map>
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 map <int, vector<int> > mm;
 int main()
