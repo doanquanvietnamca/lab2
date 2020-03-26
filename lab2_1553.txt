@@ -1,0 +1,4 @@
+Input data enter to the graph with note u and weight v. 
+Use array of struct to save this graph.
+Then use Depth-first search (DFS) is an algorithm (or technique) for traversing a graph. 
+It can get better to search and find the max of node between 2 node
