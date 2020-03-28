@@ -1,0 +1,5 @@
+Create struct to save the [u , v]
+Add the min and max [0 .. 1e9]
+Type the arr, save to struct array and new index array
+Sort new array
+use struct to find color and l,r is intergral of index 2 number
