@@ -1,10 +1,12 @@
-Задача
-   По заданному дереву найдите расстояние между двумя узлами.
-Идеи решения проблем
-     Принимая 0 в качестве корневого узла, dfs сначала находит пройденный порядок узлов и 
-     соответствующую глубину узла, записывает первое вхождение каждого узла в последовательность
-     Эйлера и записывает расстояние от каждого узла до корневого узла.
-     RMQ предварительной обработки может быстро получить точку, ближайшую к корню (наименьшую глубину)
-     за определенный интервал в последовательности Эйлера, а затем путем поиска двух узлов u, v наименьшую
-     глубину в интервале, где впервые появляется последовательность Эйлера Соответствующий узел - LCA (u, v),
-     тогда расстояние между u и v равно dis [u] -dis [t] + dis [v] -dis [t].
+Task
+   In the given tree, find the distance between the two nodes.
+Problem Solving Ideas
+     Taking 0 as the root node, dfs first finds the passed order of nodes and
+     corresponding node depth, records the first occurrence of each node in the sequence
+     Euler and records the distance from each node to the root node.
+     RMQ preprocessing can quickly get the point closest to the root (shallowest depth)
+     for a certain interval in the Euler sequence, and then by searching for two nodes u, v the smallest
+     depth in the interval where the Euler sequence first appears. The corresponding node is LCA(u, v),
+     LCA(Lowest Common Ancestor in a Binary Tree) Given a binary tree (not a binary search tree) and two
+     values say n1 and n2, write a program to find the least common ancestor. LCA is best solution in this task
+     then the distance between u and v is dis[u]-dis[t].
