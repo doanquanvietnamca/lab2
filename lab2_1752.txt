@@ -1,12 +1,12 @@
-Для данного дерева из n точек все веса ребер равны 1. Затем q запросов, каждый раз спрашивая, что это за узел из узла vi,
-выведите любой.
+For a given tree of n points, all edge weights are equal to 1. Then q queries, each time asking what kind of node is from node vi,
+print any.
 
-В начале yy достиг диаметра дерева.Конечная точка самого длинного пути, который может пройти каждая точка, должна быть
-некоторой конечной точкой диаметра. Затем сохраните точки на диаметре, 
-а затем проверьте правильность определения TLE, когда вас спросят, не является ли vi точкой на диаметре. , ,
+At the beginning, yy reached the diameter of the tree. The endpoint of the longest path that each point can go must be
+some end point of the diameter. Then save the points on the diameter,
+then check if the TLE is correctly determined when asked if vi is a point on the diameter. ,,
 
-Gxb появился позже, используя двумерный массив fa для записи пути от каждой точки до двух точек останова в диаметре.
-Поскольку все веса ребер равны 1, при запросе можно использовать RMQ(Range Minimum Query O(1)). , , 
-функция gao: // Сделать самую длинную дорогу с RMQ
-array    fa: запись родительского узла
-Функция query: // поиск RMQ
+Gxb appeared later, using a two-dimensional array fa to record the path from each point to two breakpoints in diameter.
+Since all edge weights are 1, you can use RMQ (Range Minimum Query O (1)) when querying. ,,
+gao function: // Make the longest road with RMQ
+array fa: parent node entry
+Query function: // search RMQ
