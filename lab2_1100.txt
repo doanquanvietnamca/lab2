@@ -1,8 +1,8 @@
-Задание требует заменить функция buble_sort  на быстрее функцию
-так как, использую stable_sort,чтобы сортировать элементы в диапазоне [первый, последний) в порядке возрастания.
-Порядок эквивалентных элементов гарантированно сохраняется.
-Элементы сравниваются с использованием оператора <
+The job requires replacing the buble_sort function with a faster function
+since I use stable_sort to sort the elements in the range [first, last) in ascending order.
+The order of equivalent elements is guaranteed to be preserved.
+Elements are compared using the <
 bool operator < (team X)const{
         return solved>X.solved;
     }
-    Предлогаю использовать знак >, чтобы не поменять место когда 2 число равным, так как гарантированно сохраняется.
+    I suggest using the> sign to not change the place when the 2nd number is equal, since it is guaranteed to be preserved.
