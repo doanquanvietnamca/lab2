@@ -1,7 +1,7 @@
-Намерение: найти обратные порядковые пары. Выведите метку обратного порядкового номера в наибольшую строку.
-Если имеется несколько строк, выведите метку строки с наименьшим количеством строк.
-Разделите интервал, потому что диапазон каждого числа 1-N. Определенно меньше, чем 10000.
-Разделите 10000 на 100 интервалов и запишите, сколько значений составляет от 1 до 10000, а затем запишите, 
-сколько в каждом интервале.
-Для каждого значения просто знайте, сколько из предыдущих чисел больше его.
-Каждый поиск имеет максимум 100 интервалов + 100 значений = 200 раз.
+Intention: find inverse ordinal pairs. Print the label of the reverse sequence number in the largest line.
+If there are multiple lines, print the line label with the fewest lines.
+Divide the interval because the range of each number is 1-N. Definitely less than 10,000.
+Divide 10000 by 100 intervals and write down how many values are from 1 to 10000, and then write down,
+how many in each interval.
+For each value, just know how many of the previous numbers are greater than it.
+Each search has a maximum of 100 intervals + 100 values = 200 times.
