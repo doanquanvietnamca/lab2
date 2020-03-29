@@ -1,9 +1,9 @@
-std::priority_queue представляют собой тип контейнерных адаптеров, специально
-разработанных таким образом, чтобы первый элемент очереди являлся наибольшим
-из всех элементов в очереди, а элементы находились в не возрастающем порядке.
-Первые n / 2+ 1 элементы сначала добавляются в очередь приоритетов.
-В это время очередь приоритетов уменьшается. После добавления каждого
-элемента самый большой элемент удаляется. После того, как все элементы
-поставлены в очередь, самый большой элемент непрерывно удаляется, так как
-последний элемент удаляется. Это медиана. (Обрабатывать случаи, когда
-n нечетно и четно)
+std :: priority_queue are a type of container adapter specifically
+designed so that the first element of the queue is the largest
+of all the items in the queue, and the items were in non-increasing order.
+The first n / 2+ 1 elements are first added to the priority queue.
+At this time, the priority queue decreases. After adding each
+element the largest element is deleted. After all the items
+queued, the largest element is continuously removed since
+The last item is deleted. This is the median. (Handle cases where
+n odd and even)
