@@ -1,11 +1,11 @@
-deque (обычно произносится как «колода») - это неправильная аббревиатура двусторонней очереди. 
-deque> Двусторонние очереди - это контейнеры последовательности с динамическими размерами, которые
-можно расширять или сжимать на обоих концах(либо спереди, либо сзади).Tак как использую deque
-Общие операции:
-(1) Вставка: Если с конца команды вставлен новый элемент,
-который разрушит монотонность,
-(2) удалите элемент в конце команды, пока он не
-будет уничтожен, а затем вставьте его в монотонную очередь.
-(3) Получите максимальное или минимальное значение: посетите первый
-элемент команды.
-После m раз вывести первый элемент команды
+deque (usually pronounced “deck”) is an incorrect abbreviation for a two-way queue.
+deque> Two-way queues are sequence containers with dynamic sizes that
+can be expanded or compressed at both ends (either front or back). As I use deque
+General operations:
+(1) Insert: If a new element is inserted from the end of the command,
+which will destroy the monotony,
+(2) delete the item at the end of the command until it
+will be destroyed, and then insert it into a monotonous queue.
+(3) Get the maximum or minimum value: visit the first
+command element.
+After m times, print the first element of the command
