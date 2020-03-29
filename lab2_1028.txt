@@ -1,7 +1,7 @@
-Поскольку координата y в данных уже отсортирована в порядке возрастания,
-вы можете вообще игнорировать y и учитывать только x. Поскольку все
-предыдущие координаты y меньше или равны текущей, последующее подтверждение
-не будет ниже текущей точки, поэтому нам нужно только посчитать, сколько
-x-координат в предыдущей точке меньше или равно текущей точке. так как
-использовал древовидных массивов для обслуживания.
-Смысл в том, что уровень звезды - это сумма всех звезд, которые не справа.
+Since the y coordinate in the data is already sorted in ascending order,
+you can ignore y altogether and only consider x. Since all
+previous y coordinates are less than or equal to the current, subsequent confirmation
+will not be lower than the current point, so we only need to calculate how much
+The x-coordinates at the previous point are less than or equal to the current point. as
+used tree arrays for maintenance.
+The point is that the level of a star is the sum of all the stars that are not on the right.
