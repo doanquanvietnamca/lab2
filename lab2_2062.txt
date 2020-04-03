@@ -1,0 +1,20 @@
+Obviously, the initial value will not have any impact on the subsequent operations,
+here only need to be stored separately in an array arr[n], and the initial value
+can be added at the end of each query (while i< n).
+Considering the interval value update, if single-point query, it is easy to think 
+of a board with a tree array. However, the interval update display here does not only 
+update the interval, but the points within the interval will also affect its multiple 
+points. If you consider updating the subsequent multiple points while updating, the 
+complexity obviously cannot meet the conditions. Therefore, for [left right] d, only 
+the update interval [l, r] is considered. Single operation complexity is O (logN)
+The method I thought of is-the update of each point has an impact on its multiple points.
+It can be understood that the value of each point must consider the effect of its 
+approximate point on it. Query to get the contribution to the current value. Single 
+operation complexity O (logN × N)
+ *** function:
+ - lowbit - > get first 1 bit of binary:
+          001 -> 1
+          010 -> 2
+          110 -> 2
+ - add -> Additional value added to the range [l r] into array bin[]
+ - sum -> depending on the value of the location index to aggregate the match
