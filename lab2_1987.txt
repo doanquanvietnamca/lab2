@@ -1,4 +1,5 @@
 Given n segments, every two segments either do not satisfy the common part, or contain. For given m queries, find
 line number of the smallest length covered by the current point.
-First write down the line segments on the left that are smaller than the query point, and then remove the right ones from these points,
+First write down the line segments on the left that are smaller than the query point, and then remove the right 
+ones from these points,
 which are less than the request point;
