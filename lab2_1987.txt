@@ -1,4 +1,4 @@
-Учитывая n отрезков, каждые два отрезка либо не удовлетворяют общей части, либо содержат. По заданным m запросам найдите
-номер строки наименьшей длины, охватываемой текущей точкой.
-Сначала запишите сегменты линии слева, которые меньше, чем точка запроса, а затем удалите правые из этих точек, 
-которые меньше, чем точка запроса;
+Given n segments, every two segments either do not satisfy the common part, or contain. For given m queries, find
+line number of the smallest length covered by the current point.
+First write down the line segments on the left that are smaller than the query point, and then remove the right ones from these points,
+which are less than the request point;
